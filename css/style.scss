@@ -1,6 +1,13 @@
+
+// Converted Variables
+
+
+// Custom Media Query Variables
+
+
 @charset "UTF-8";
 @import url(font-awesome.min.css);
-@import "http://fonts.googleapis.com/css?family=Raleway:400,700";
+@import url("http://fonts.googleapis.com/css?family=Raleway:400,700");
 
 /*
 	Spatial by TEMPLATED
@@ -666,7 +673,6 @@
 				margin-left: -1em;
 				padding: 0;
 				table-layout: fixed;
-				width: calc(100% + 1em);
 			}
 
 				ul.actions.fit li {
@@ -680,7 +686,6 @@
 
 				ul.actions.fit.small {
 					margin-left: -0.5em;
-					width: calc(100% + 0.5em);
 				}
 
 					ul.actions.fit.small li {
