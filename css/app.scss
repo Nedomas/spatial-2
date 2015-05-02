@@ -1,0 +1,24 @@
+.place {
+  height: 300px;
+  width: 100px;
+  background-position: center;
+  background-size: contain;
+}
+
+.get-notified {
+  input, .select-wrapper {
+    margin: 1em auto;
+    max-width: 25em;
+  }
+}
+
+.map {
+  height: 200px;
+  background-position: left;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#skel-layers-wrapper {
+  padding-top: 2em;
+}

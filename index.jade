@@ -1,146 +1,33 @@
 doctype html
-//
-  Spatial by TEMPLATED
-  templated.co @templatedco
-  Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 html
   head
-    title Spatial by TEMPLATED
+    title Stories from Vilnius
     meta(http-equiv='content-type', content='text/html; charset=utf-8')
     meta(name='description', content='')
     meta(name='keywords', content='')
-    //if lte IE 8
-      script(src='js/html5shiv.js')
     script(src='js/jquery.min.js')
     script(src='js/skel.min.js')
     script(src='js/skel-layers.min.js')
     script(src='js/init.js')
-    noscript
-      | &lt;link rel=&quot;stylesheet&quot; href=&quot;css/skel.css&quot; /&gt;
-      | &lt;link rel=&quot;stylesheet&quot; href=&quot;css/style.css&quot; /&gt;
-      | &lt;link rel=&quot;stylesheet&quot; href=&quot;css/style-xlarge.css&quot; /&gt;
-  body.landing
-    // Header
-    header#header.alt
-      h1
-        strong
-          a(href='index.html') Spatial
-        |  by Templated
-      nav#nav
-        ul
-          li
-            a(href='index.html') Home
-          li
-            a(href='generic.html') Generic
-          li
-            a(href='elements.html') Elements
-    // Banner
-    section#banner
-      h2 Spatial
-      p
-        | Lorem ipsum dolor sit amet nullam consequat
-        br
-        |  interdum vivamus donce sed libero.
-      ul.actions
-        li
-          a.button.special.big(href='#') Get Started
-    // One
-    section#one.wrapper.style1
-      .container(class='75%')
-        .row(class='200%')
-          div.6u(class='12u$(medium)')
-            header.major
-              h2 Maecenas luctus lectus
-              p Perspiciatis doloremque recusandae dolor
-          div(class='6u$ 12u$(medium)')
-            p
-              | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non ea mollitia corporis id, distinctio sunt veritatis officiis dolore reprehenderit deleniti voluptatibus harum magna, doloremque alias quisquam minus, eaque. Feugiat quod, nesciunt! Iste quos ipsam, iusto sit esse.
-            p
-              | Dolorum aspernatur maxime libero ratione quidem distinctio, placeat fugiat laborum voluptatum enim neque soluta vel sunt id ex veritatis. Labore rerum, odit sapiente, alias mollitia magnam exercitationem modi amet earum quia atque ipsum voluptas asperiores quas laboriosam.
-    // Two
-    section#two.wrapper.style2.special
+    link(rel='stylesheet' href='css/app.css')
+  body
+    section
       .container
-        header.major
-          h2 Fusce ultrices fringilla
-          p Maecenas vitae tellus feugiat eleifend
-        .row(class='150%')
-          div.6u(class='12u$(xsmall)')
-            .image.fit.captioned
-              img(src='images/pic02.jpg', alt='')
-              h3 Lorem ipsum dolor sit amet.
-          div(class='6u$ 12u$(xsmall)')
-            .image.fit.captioned
-              img(src='images/pic03.jpg', alt='')
-              h3 Illum, maiores tempora cupid?
-        ul.actions
-          li
-            a.button.special.big(href='#') Nulla luctus
-          li
-            a.button.big(href='#') Sed vulputate
-    // Three
-    section#three.wrapper.style1
+        h3
+          strong
+            a(href='/') Stories from Vilnius
+
+    section#main.wrapper
       .container
-        header.major.special
-          h2 Mauris vulputate dolor
-          p Feugiat sed lorem ipsum magna
-        .feature-grid
-          .feature
-            .image.rounded
-              img(src='images/pic04.jpg', alt='')
-            .content
-              header
-                h4 Lorem ipsum
-                p Lorem ipsum dolor sit
-              p
-                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore esse tenetur accusantium porro omnis, unde mollitia totam sit nesciunt consectetur.
-          .feature
-            .image.rounded
-              img(src='images/pic05.jpg', alt='')
-            .content
-              header
-                h4 Recusandae nemo
-                p Ratione maiores a, commodi
-              p
-                | Animi mollitia optio culpa expedita. Dolorem alias minima culpa repellat. Dolores, fuga maiores ut obcaecati blanditiis, at aperiam doloremque.
-          .feature
-            .image.rounded
-              img(src='images/pic06.jpg', alt='')
-            .content
-              header
-                h4 Laudantium fugit
-                p Possimus ex reprehenderit eaque
-              p
-                | Maiores iusto inventore fugit architecto est iste expedita commodi sed, quasi feugiat nam neque mollitia vitae omnis, ea natus facere.
-          .feature
-            .image.rounded
-              img(src='images/pic07.jpg', alt='')
-            .content
-              header
-                h4 Porro aliquam
-                p Quaerat, excepturi eveniet laboriosam
-              p
-                | Vitae earum unde, autem labore voluptas ex, iste dolorum inventore natus consequatur iure similique obcaecati aut corporis hic in! Porro sed.
-    // Four
-    section#four.wrapper.style3.special
+        include ./places/evert-taube
+    include ./get-notified
+    section#main.wrapper
       .container
-        header.major
-          h2 Aenean elementum ligula
-          p Feugiat sed lorem ipsum magna
-        ul.actions
-          li
-            a.button.special.big(href='#') Get in touch
-    // Footer
+        include ./places/modern-waterfront
+
     footer#footer
       .container
-        ul.icons
-          li
-            a.icon.fa-facebook(href='#')
-          li
-            a.icon.fa-twitter(href='#')
-          li
-            a.icon.fa-instagram(href='#')
         ul.copyright
-          li &copy; Untitled
           li
             | Design:
             a(href='http://templated.co') TEMPLATED
