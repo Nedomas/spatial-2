@@ -11,16 +11,10 @@ html
     script(src='js/init.js')
     link(rel='stylesheet' href='css/app.css')
   body
-    section
-      .container
-        h3
-          strong
-            a(href='/') Stories from Vilnius
-
+    include ./get-notified
     section#main.wrapper
       .container
         include ./places/evert-taube
-    include ./get-notified
     section#main.wrapper
       .container
         include ./places/modern-waterfront
